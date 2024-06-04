@@ -89,9 +89,9 @@ public class JFrame extends javax.swing.JFrame {
                     Client client = new Client(firstName, lastName);
                     for (int j = 0; j < numAccounts; j++) {
                         line = br.readLine().trim();
-                        String[] accountData = line.split("\\s+"); // Розділити рядок за будь-якою кількістю пробілів
+                        String[] accountData = line.split("\\s+");
 
-                        if (accountData.length >= 3) { // Перевірка на кількість елементів у масиві
+                        if (accountData.length >= 3) {
                             String type = accountData[0];
                             double balance = Double.parseDouble(accountData[1]);
                             double additionalInfo = Double.parseDouble(accountData[2]);
